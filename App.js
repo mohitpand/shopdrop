@@ -1,114 +1,179 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, { Component } from 'react';
+import { View, Image, TouchableOpacity,Text, Easing, Animated } from 'react-native';
+import { createAppContainer,createBottomTabNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import {createDrawerNavigator} from 'react-navigation-drawer';
+import SplashScreen from "./src/screens/SplashScreen";
+import HomeScreen from './src/screens/HomeScreen';
+import Settings from './src/screens/Settings';
+import ContactUs from './src/screens/ContactUs';
+import AccountScreen from './src/screens/AccountScreen';
+import AudienceSettingScreen from './src/screens/AudienceSettingScreen';
+import NotificationSettingScreen from './src/screens/NotificationSettingScreen';
+import BlockScreen from './src/screens/BlockScreen';
+import FAQScreen from './src/screens/FAQScreen';
+import EditProfileScreen from "./src/screens/EditProfileScreen";
+import IntroScreen from "./src/screens/IntroScreen";
+import TermConditionScreen from "./src/screens/TermConditionScreen";
+import FilterScreen from "./src/screens/FilterScreen";
+import AuthNavigator from './src/screens/AuthNavigator';
+import LoginScreen from "./src/screens/LoginScreen"
+import ForgotPasswordScreen from "./src/screens/ForgotPasswordScreen";
+import SignUpScreen from "./src/screens/SignUpScreen";
 
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+console.disableYellowBox = true;
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+export class App extends Component {
+ render(){
+   return(
+    <View style={{height:100,width:100,backgroundColor:"red"}}>
+      <Text>InOneGram App</Text>
+    </View>
+   )
+ }
+}
 
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
-};
+export const AppNavigator = createStackNavigator({
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  HomeScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:HomeScreen
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+  Settings: {
+    navigationOptions:{
+      header:null
+    },
+     screen:Settings
   },
-  body: {
-    backgroundColor: Colors.white,
+  ContactUs: {
+    navigationOptions:{
+      header:null
+    },
+     screen:ContactUs
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  AccountScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:AccountScreen
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
+  AudienceSettingScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:AudienceSettingScreen
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
+  NotificationSettingScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:NotificationSettingScreen
   },
-  highlight: {
-    fontWeight: '700',
+  BlockScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:BlockScreen
   },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+  FAQScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:FAQScreen
   },
-});
+  EditProfileScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:EditProfileScreen
+  },
+  IntroScreen:{
+    navigationOptions:{
+      header:null
+    },
+    screen:IntroScreen
+  },
+  TermConditionScreen:{
+    navigationOptions:{
+      header:null
+    },
+    screen:TermConditionScreen
+  },
+  FilterScreen:{
+    navigationOptions:{
+      header:null
+    },
+    screen:FilterScreen
+  },  
+  SplashScreen:{
+    navigationOptions:{
+      header:null
+    },
+    screen:SplashScreen
+  },
+  AuthNavigator: {
+    navigationOptions:{
+      header:null
+    },
+     screen:AuthNavigator
+  },
+  LoginScreen: {
+    navigationOptions:{
+      header:null
+    },
+     screen:LoginScreen
+  },
+  ForgotPasswordScreen:{
+    navigationOptions:{
+      header:null
+    },
+    screen:ForgotPasswordScreen
+  },
+  SignUpScreen:{
+    navigationOptions:{
+      header:null
+    },
+    screen:SignUpScreen
+  }
+},{
+  initialRouteName: 'SplashScreen',
+  defaultNavigationOptions: {
+    gesturesEnabled: false,
+  },
+  transitionConfig: () => ({
+    transitionSpec: {
+      duration: 300,
+      easing: Easing.out(Easing.poly(4)),
+      timing: Animated.timing,
+    },
+    screenInterpolator: sceneProps => {
+      const { layout, position, scene } = sceneProps;
+      const { index } = scene;
 
-export default App;
+      const height = layout.initHeight;
+      const translateX = position.interpolate({
+        inputRange: [index - 1, index, index + 1],
+        outputRange: [height, 0, 0],
+      });
+
+      const opacity = position.interpolate({
+        inputRange: [index - 1, index - 0.99, index],
+        outputRange: [0, 1, 1],
+      });
+
+      return { opacity, transform: [{ translateX }] };
+    },
+  }),
+  navigationOptions: {
+    gestureResponseDistance: {
+      horizontal: 25,
+      vertical: 200,
+    },
+  }
+}
+);
+
+export default createAppContainer(AppNavigator);
+

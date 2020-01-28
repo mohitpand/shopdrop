@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "shopdrop.app"
-               BlueprintName = "shopdrop"
-               ReferencedContainer = "container:shopdrop.xcodeproj">
+               BuildableName = "ShopDrop.app"
+               BlueprintName = "ShopDrop"
+               ReferencedContainer = "container:ShopDrop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "shopdropTests.xctest"
-               BlueprintName = "shopdropTests"
-               ReferencedContainer = "container:shopdrop.xcodeproj">
+               BuildableName = "ShopDropTests.xctest"
+               BlueprintName = "ShopDropTests"
+               ReferencedContainer = "container:ShopDrop.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "shopdropTests.xctest"
-               BlueprintName = "shopdropTests"
-               ReferencedContainer = "container:shopdrop.xcodeproj">
+               BuildableName = "ShopDropTests.xctest"
+               BlueprintName = "ShopDropTests"
+               ReferencedContainer = "container:ShopDrop.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "shopdrop.app"
-            BlueprintName = "shopdrop"
-            ReferencedContainer = "container:shopdrop.xcodeproj">
+            BuildableName = "ShopDrop.app"
+            BlueprintName = "ShopDrop"
+            ReferencedContainer = "container:ShopDrop.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "shopdrop.app"
-            BlueprintName = "shopdrop"
-            ReferencedContainer = "container:shopdrop.xcodeproj">
+            BuildableName = "ShopDrop.app"
+            BlueprintName = "ShopDrop"
+            ReferencedContainer = "container:ShopDrop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "shopdrop.app"
-            BlueprintName = "shopdrop"
-            ReferencedContainer = "container:shopdrop.xcodeproj">
+            BuildableName = "ShopDrop.app"
+            BlueprintName = "ShopDrop"
+            ReferencedContainer = "container:ShopDrop.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
